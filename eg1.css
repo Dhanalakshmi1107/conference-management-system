@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border_box;/*to box model*/
+}
+/* for background image positioning*/
+.bg{
+  position: relative;
+  height: 90vh;
+  display: flex;
+  width: 99vw;
+  align-items: top;
+  background-image: url(https://wallpaperaccess.com/full/279547.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* for text on the background positioning*/
+.bg_text{
+  position:absolute;
+  font-style: italic;
+  text-align: left;
+  color:black;
+  font-weight:bolder;
+  font-size: 100px;
+  margin-top: 110px;
+}
+/* for button hovering*/
+.btn:hover {
+  background-color: rgba(78, 193, 221, 0.945);
+}
+.btn {
+background-color: rgba(199, 209, 212, 0.788);
+border: none;
+color: black;
+padding: 12px 16px;
+font-size: 16px;
+cursor: pointer;
+text-align: center;
+float:right;
+position: relative;
+}
+

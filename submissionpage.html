@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SUBMISSION PAGE</title>
+<style>
+
+    .bg3 {
+  position: relative;
+  height: 97.7vh;
+  display: flex;
+  width: 98.5vw;
+  align-items: top;
+  background-image: url(https://wallpapercave.com/wp/wp2019257.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+     }
+
+     .bg_text3{
+         margin-top: 200px;
+         margin-left: 640px;
+         height: 20px;
+
+     }
+
+      .container{
+          width: 300px;
+          height:40px;
+          background-color: #223C60;
+          border: 2px solid transparent;
+          margin-left: 30px;
+          color: azure;
+      }
+      .container:focus{
+          background-color: rgb(21, 192, 192);
+      }
+      .button{
+          width: 90px;
+          height: 40px;
+          margin-left: 110px;
+          background-color: aqua;
+          border: 2px solid black;
+          border-radius: 12px;
+          
+      }
+
+      .button:hover{
+          background-color: transparent;
+          border-color: aqua;
+      }
+</style>
+</head>
+<body>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+    <div class="bg3">
+        <div class="bg_text3">
+        <h1>ENTER THE FILE LINK HERE</h1>
+        <label style="font-size: 20px;" ><b>NAME</b></label>
+        <br><br><input class="container" type="text" placeholder="Enter name" name="name" required>
+        <br><br><label style="font-size: 20px;" ><b>LINK</b></label>
+        <br><br><input class="container" type="text" placeholder="Enter link" name="link" required>
+
+        <button onclick="myFunction()" type="submit" name="submit" class="button">SUBMIT</button>
+    </form>
+        </div>
+        </div>
+        
+        <script>
+            function myFunction() {
+            alert("SUBMISSION SUCCESSFUL");
+              }
+         </script>
+        </body>
+        </html>

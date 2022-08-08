@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTION PAGE</title>
+</head>
+<style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1cd97;
+  margin-top: 60px;
+  height: 60px;
+  width: 500px;
+  right: 100%;
+  margin-left: 520px; 
+  padding-bottom: 300px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 20px;
+  background-color: white;
+  height: 430px;
+}
+    
+/* Full-width input fields */
+input[type=text] {
+  width: 400px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-left: 30px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.subbutton{
+  background-color: #df8bbc;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 460px;
+  opacity: 0.9;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.subbutton:hover {
+  opacity:1;
+}
+
+.addbutton{
+  background-color: #3d9bda;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 460px;
+  opacity: 0.9;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.addbutton:hover {
+  opacity:1;
+}
+
+</style>
+<body>
+    <form action="selection1.php" method="post">
+        <div class="container">
+    <h1>SELCTION LIST</h1>
+    <p>Please add the name,title and status here.</p>
+
+    <label ><b>NAME</b></label>
+    <br><input type="text" placeholder="Enter name" name="name" >
+
+    <br><br><label ><b>TITLE</b></label>
+    <br><input type="text" placeholder="Enter title name" name="title">
+
+    <br><br><label ><b>STATUS</b></label>
+    <input type="text" placeholder="status" name="status">
+</div>
+<button name="submit" type="submit" onclick="myFunction()" class="addbutton">ADD</button>
+</form>
+    
+    <a href="display.php"><button class="subbutton">DONE</button></a>
+
+    <script>
+      function myFunction() {
+      alert("SUBMITTED SUCCESSFULLY");
+        }
+   </script>
+
+</body>
+</html>

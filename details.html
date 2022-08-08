@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DETAILS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css">
+  <style>
+      .card-registration .select-input.form-control {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: 20px;
+  padding-right: .75em;
+}
+.card-registration .select-arrow {
+  top: 60px;
+}
+  </style>
+</head>
+<body>   
+    <form id="myform" action="details1.php" method="post">
+<section class="h-100 bg-dark">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img
+                  src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-registration/img4.jpg"
+                  alt="Sample photo"
+                  class="img-fluid"
+                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"
+                />
+              </div>
+              <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                  <h3 class="mb-5 text-uppercase">Details form</h3>
+  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text"  name="firstname" class="form-control form-control-lg" />
+                        <label class="form-label" >First name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" name="lastname" class="form-control form-control-lg" />
+                        <label class="form-label" >Last name</label>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" name="qualification" class="form-control form-control-lg" />
+                    <label class="form-label"  >Qualification</label>
+                  </div>
+  
+                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+  
+                    <h6 class="mb-0 me-4">Gender: </h6>
+  
+                    <div class="form-check form-check-inline mb-0 me-4" >
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gender"
+                        id="femaleGender"
+                        value="option1"
+                      />
+                      <label class="form-check-label" for="femaleGender">Female</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gender"
+                        id="maleGender"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="maleGender">Male</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline mb-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gender"
+                        id="otherGender"
+                        value="option3"
+                      />
+                      <label class="form-check-label" for="otherGender">Other</label>
+                    </div>
+  
+                  </div>
+  
+                  <div class="row">
+                    <div class="col-md-6 mb-4" >
+  
+                      <select class="select" name="state">
+                        <option value="1">State</option>
+                        <option value="2">1.Tamil Nadu</option>
+                        <option value="3">2.Delhi</option>
+                        <option value="4">3.Kerala</option>
+                      </select>
+  
+                    </div>
+                    <div class="col-md-6 mb-4" >
+  
+                      <select class="select" name="city">
+                        <option value="1">City</option>
+                        <option value="2">1.Chennai</option>
+                        <option value="3">2.Delhi</option>
+                        <option value="4">3.Kochi</option>
+                      </select>
+  
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" name="dob" class="form-control form-control-lg" />
+                        <label class="form-label"  >DOB</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" name="age"  class="form-control form-control-lg" />
+                        <label class="form-label"  >Age</label>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" name="title" class="form-control form-control-lg" />
+                    <label class="form-label"  >PAPER TITLE</label>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text"  name="email" class="form-control form-control-lg" />
+                        <label class="form-label"  >EMAIL ID</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="tel"  name="ph_no" class="form-control form-control-lg" />
+                        <label class="form-label"  >PH NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="d-flex justify-content-end pt-3">
+                    <button type="button" class="btn btn-light btn-lg" onclick="reload()" name="reset">Reset all</button>
+                    <a href="payment.html"> <button name="sign_up" type="submit" class="btn btn-warning btn-lg ms-2">Signup</button></a>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+</form>  
+
+
+<script>
+  function reload() {
+    window.location.reload();
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REVIEWER MENU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css">
+
+<style>
+   *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border_box;/*to box model*/
+}
+/* for background image positioning*/
+.bg{
+  position: relative;
+  height: 87vh;
+  display: flex;
+  width: 99vw;
+  align-items: top;
+  background-image: url(https://wallpaperaccess.com/full/198038.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* for text on the background positioning*/
+.bg_text{
+  position:absolute;
+  font-style: italic;
+  text-align: left;
+  color:black;
+  font-weight:bolder;
+  font-size: 100px;
+  margin-top: 110px;
+}
+</style>
+</head>
+<body>   
+    
+    
+    <!--navbar-->
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+     
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" rel="import" href="paper.php">LINK PAGE</a></li>
+                  <li><a class="dropdown-item" rel="import" href="selection.html">SELECTION PAGE</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="reviewermenu.html" onclick="yourFunction(); return false">CANCEL</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </nav>
+      <div class="bg">  
+        <div class="bg_text">
+            <h1 style="font-size:85px;"><strong> WELCOME OUR<br>BELOVED REVIEWER</strong><br>THE PEN IS MIGHTIER<br>THAN A SWORD</h1>
+        </div>  
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+</body>
+</html>

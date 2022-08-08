@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <title>REVIEWER LOGIN</title>
+<style>
+  
+    .review_login{
+      background-color: rgb(221, 176, 176);
+      text-align: center;
+    }
+    .container-fluid{
+        background-color: aqua;
+        width:400px;
+        height: 250px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        margin-left: 550px;
+    }
+    .heading{
+      margin-top: 180px;
+      margin-right: 50px;
+      font-style: oblique;
+    }
+</style>
+</head>
+<body class="review_login">
+    <form  action="review.php" method="post">
+      <div class="heading">
+        <h1 style="font-size: 50px;">REVIEWER LOGIN</h1>
+        <div class="container-fluid">
+          <div class="form-floating mb-3">
+            <input name="email" type="email" class="form-control" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input name="password" type="password" class="form-control" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+        <div class="text-center">
+        <br>  <button type="submit" class="btn btn-dark" rel="import" name="login">LOG IN</button>
+        </div>
+        </div>
+        </div>
+      </form>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PAYMENT</title>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    border-style: solid;
+    border-radius: 2px;
+    border-color: black;
+    margin-top: 60px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+    background-color: #f5f8f8;
+    padding: 20px;
+    padding-bottom: 1%;
+}
+
+.card {
+    width: 500px;
+    margin: auto;
+    color: black;
+    border-radius: 5px
+}
+
+p {
+    margin: 0px
+}
+/*payment details heading*/
+.container .h8 {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    background-color: white;
+}
+
+button {
+  background-color: #39c1eb;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 30px;
+  margin-left: 85px;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  font-style:oblique ;
+  font-size: 20px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/*for text box alignment*/
+.form-control {
+    color: white;
+    background-color: #223C60;
+    border: 2px solid transparent;
+    height: 60px;
+    padding-left: 40px;
+    margin-left: 60px;
+    width: 350px;
+}
+
+.form-control:focus {
+    color: white;
+    background-color: #0C4160;
+    border: 2px solid #2d4dda;
+    box-shadow: none
+}
+
+/*for all the headings*/
+.text {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: white;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+}
+    </style>
+    </head>
+    <body>
+        <form action="payment1.php" method="post">
+<div class="container p-0">
+    <div class="card px-4">
+        <h1 style="font-style: italic;" class="h8 py-3">PAYMENT DETAILS</h1>
+        <div class="row gx-3">
+            <div class="col-12">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">PERSON NAME</p> <input name="name" class="form-control mb-3" type="text" placeholder="Name" required>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">CARD NUMBER</p> <input name="card_number" class="form-control mb-3" type="text" placeholder="1234 5678 435678" required>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">EXPIRY</p> <input name="expiry" class="form-control mb-3" type="text" placeholder="MM/YYYY" required>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">CVV/CVC</p> <input name="password" class="form-control mb-3 pt-2 " type="password" placeholder="***" required>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="button"> <button onclick="myFunction()" type="submit" class="button"><span class="ps-3">PAY $500</span></button> </div>
+            
+                  <script>
+                     function myFunction() {
+                     alert("PAYMENT SUCCESSFUL");
+                       }
+                  </script>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
